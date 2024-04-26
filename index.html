@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+           <h1>Contact Us</h1>
+           <label>Name:</label>
+           <input type="text" id="name" placeholder="Enter your name :">
+           <small class="error" ></small>
+           <label>Email:</label>
+           <input type="text" id="email" placeholder="Your email :">
+           <small class="error"></small>
+           <label>Password:</label>
+           <input type="password" id="password" placeholder="Your password :">
+           <small class="error"></small>
+           <label>Message:</label>
+           <textarea id="message" placeholder="Your message :"></textarea>
+           <small class="error"></small>
+           <button class="center">
+              Submit
+           </button>
+           <p id="success">
+             <!---result-->
+           </p>
+        </form>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
